@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --color-text1: hsl(238, 29%, 16%);
+  --color-text2: hsl(14, 88%, 65%);
+  --bgcolor1: hsl(273, 75%, 66%);
+  --bgcolor2: hsl(240, 73%, 65%);
+  --color1: hsl(237, 12%, 33%);
+  --color2: hsl(240, 6%, 50%);
+  --colorDivider: hsl(240, 5%, 91%);
+  --font-size: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans";
+}
+
+body {
+  background: linear-gradient(var(--bgcolor1), var(--bgcolor2));
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-container {
+  background-color: white;
+  height: 80%;
+  width: 80%;
+  border-radius: 20px;
+  display: flex;
+}
+
+#container-left {
+  width: 50%;
+  overflow: hidden;
+}
+
+#img-bg-pattern-design {
+  transform: translate(-565px, -290px);
+}
+
+#img-woman-illustration {
+  transform: translate(-76px, -890px);
+}
+
+#img-box {
+  transform: translate(-92px, -1120px);
+  position: absolute;
+}
+
+#container-right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#tittle {
+  height: 10%;
+  margin-top: 5rem;
+  color: var(--color1);
+}
+
+#questions-container {
+  margin-top: 2rem;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.div-question {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  padding: 1rem 1rem 1rem 0;
+  align-items: center;
+}
+
+.questionActive {
+  color: var(--color-text1);
+  font-weight: 700;
+}
+
+.question:hover {
+  color: var(--color-text2);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 0.8rem;
+  height: 0.6rem;
+}
+
+.divider {
+  color: var(--color2);
+  opacity: 0.5;
+  width: 75%;
+}
+
+.arrowActive {
+  width: 0.8rem;
+  height: 0.6rem;
+  transform: rotate(180deg);
+}
+
+
+.div-answer {
+  display: none;
+  width: 70%;
+  color: var(--color2);
+  padding: 1rem;
+}
+
+.answer {
+  width: 70%;
+  color: var(--color2);
+  padding-bottom: 1rem;
+}
